@@ -619,22 +619,22 @@ packages.">
 								<div class="eltdf-single-product-content">
 									<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
 										<figure class="woocommerce-product-gallery__wrapper">
-											<div data-thumb="https://solene.qodeinteractive.com/wp-content/uploads/2019/11/product-1-1-300x225.jpg" data-thumb-alt="m" class="woocommerce-product-gallery__image"><a href="https://solene.qodeinteractive.com/wp-content/uploads/2019/11/product-1-1.jpg"><img style="width:700px;height:600px" src='{{asset("images/$city->city_image")}}' class="wp-post-image" alt="m" title="product-1" data-caption="" data-src='{{asset("images/$city->city_image")}}' data-large_image='{{asset("images/$city->city_image")}}' data-large_image_width="1000" data-large_image_height="735" product-1-1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></a></div>
-											<span class="eltdf-onsale">Sale</span>
+											<div data-thumb="" data-thumb-alt="m" class="woocommerce-product-gallery__image"> <img style="width:700px;height:600px" src='{{asset("images/$city->city_image")}}' class="wp-post-image" alt="m" title="product-1" data-caption="" data-src='{{asset("images/$city->city_image")}}' data-large_image='{{asset("images/$city->city_image")}}' data-large_image_width="1000" data-large_image_height="735" product-1-1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></a></div>
+											
 										</figure>
 									</div>
 									<div class="eltdf-single-product-summary">
 										<div class="summary entry-summary">
 											<h2 itemprop="name" class="eltdf-single-product-title">{{$city->city_name}}</h2>
 											<p class="price"><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span> price:{{$city->price}} jD</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span> </span></ins></p>
-											<div class="woocommerce-product-rating">
-												<!-- <a href="#reviews" class="woocommerce-review-link" rel="nofollow">{{$city->price}}</a> -->
-												<a href="#reviews" class="woocommerce-review-link" rel="nofollow"><b>special_price:{{$city->special_price}} JD</b></a>
-											</div>
+											<p> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><b>special_price: {{$city->special_price}}JD</b></span></ins></p>
+
+											
 											
 											<div class="woocommerce-product-rating">
-												<!-- <a href="#reviews" class="woocommerce-review-link" rel="nofollow">{{$city->price}}</a> -->
-												<a href="#reviews" class="woocommerce-review-link" rel="nofollow"><b> Office: {{$office->office_name}}</b></a>
+
+												<p> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><b>Office: {{$office->office_name}}</b></span></ins></p>
+
 											</div>
 											<div class="product_meta">
 												<span class="sku_wrapper">max_pacenger_count: <span class="sku">{{$city->max_pacenger_count}}</span></span>
@@ -772,7 +772,7 @@ packages.">
 													<img style="width:300px; height:225px" src='{{asset("images/$value->city_image")}}' class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="i" />
 													<div class="eltdf-pl-text">
 														<div class="eltdf-pl-text-outer">
-															<div class="eltdf-pl-text-inner"><a href="?add-to-cart=2203" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2203" data-product_sku="21" aria-label="Add &ldquo;Book VI&rdquo; to your cart" rel="nofollow">{{$value->city_name}}</a></div>
+															<div class="eltdf-pl-text-inner"><a href="" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2203" data-product_sku="21" aria-label="Add &ldquo;Book VI&rdquo; to your cart" rel="nofollow">{{$value->city_name}}</a></div>
 														</div>
 													</div>
 												</div>

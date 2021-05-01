@@ -643,7 +643,7 @@ packages.">
 													</div>
 													<div class="eltdf-post-heading">
 														<div class="eltdf-post-image">
-															<a itemprop="url" href="https://solene.qodeinteractive.com/the-best-photographer-for-your-special-day/">
+														
 																<img style="width:1000px;height:640px" src='{{asset("images/$hall->hall_image")}}' class="attachment-full size-full wp-post-image" alt="" srcset='{{asset("images/$hall->hall_image")}}' 1200w, https://solene.qodeinteractive.com/wp-content/uploads/2019/11/blog-post-img-1-1-300x179.jpg 300w, https://solene.qodeinteractive.com/wp-content/uploads/2019/11/blog-post-img-1-1-1024x610.jpg 1024w, https://solene.qodeinteractive.com/wp-content/uploads/2019/11/blog-post-img-1-1-768x458.jpg 768w, sizes="(max-width: 1200px) 100vw, 1200px" /> </a>
 														</div>
 													</div>
@@ -697,7 +697,8 @@ packages.">
 
 															<h4> persons number: {{$hall->persons_number}}</h4>
 															<h4>Hall Adrdress: {{$hall->hall_address}}</h4>
-															<h4>Hall price: {{$hall->hall_price}}</h4>
+															<h5><del>Hall price: {{$hall->hall_price}}</del></h5>
+															<h4>Hall special price: {{$hall->special_price}}</h4>
 
 														</div>
 													</div>
@@ -759,10 +760,10 @@ packages.">
 											</div>
 										</div>
 										<div class="eltdf-pl-text-wrapper">
-											<h5 class="eltdf-product-list-title"><a href="https://solene.qodeinteractive.com/product/book-vi/">Book VI</a></h5>
+										<h5 class="eltdf-product-list-title"><a href="/hall2/{{$value->id}}">{{$value->hall_name}}</a></h5>
 											<span class="price">
 												<span class="woocommerce-Price-amount amount">
-													<span class="woocommerce-Price-currencySymbol">&euro;</span>50.00</span></span>
+													<!-- <span class="woocommerce-Price-currencySymbol">&euro;</span>50.00</span></span> -->
 										</div>
 										@endforeach
 

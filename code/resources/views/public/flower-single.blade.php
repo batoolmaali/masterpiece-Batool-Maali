@@ -619,20 +619,20 @@ packages.">
 <!--flower-->
 									<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
 										<figure class="woocommerce-product-gallery__wrapper">
-											<div data-thumb="https://solene.qodeinteractive.com/wp-content/uploads/2019/11/product-1-1-300x225.jpg" data-thumb-alt="m" class="woocommerce-product-gallery__image"><a href="https://solene.qodeinteractive.com/wp-content/uploads/2019/11/product-1-1.jpg"><img style="width:700px;height:600px" src='{{asset("images/$flower->flower_image")}}' class="wp-post-image" alt="m" title="product-1" data-caption="" data-src='{{asset("images/$flower->flower_image")}}' data-large_image='{{asset("images/$flower->flower_image")}}' data-large_image_width="1000" data-large_image_height="735" product-1-1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></a></div>
-											<span class="eltdf-onsale">Sale</span>
+											<div data-thumb="" data-thumb-alt="m" class="woocommerce-product-gallery__image"><img style="width:700px;height:600px" src='{{asset("images/$flower->flower_image")}}' class="wp-post-image" alt="m" title="product-1" data-caption="" data-src='{{asset("images/$flower->flower_image")}}' data-large_image='{{asset("images/$flower->flower_image")}}' data-large_image_width="1000" data-large_image_height="735" product-1-1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></a></div>
+											
 										</figure>
 									</div>
 									<div class="eltdf-single-product-summary">
 										<div class="summary entry-summary">
 											<h2 itemprop="name" class="eltdf-single-product-title" style="margin-top: 1%;">{{$flower->flower_name}}</h2>
 											<p class="price"><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>price: {{$flower->flower_price}}JD</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><b></b></span></ins></p>
-											
+											<p> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><b>special_price: {{$flower->special_price}}JD</b></span></ins></p>
+
+
 											<div class="woocommerce-product-rating">
-												<a href="#reviews" class="woocommerce-review-link" rel="nofollow"><b> special price: {{$flower->special_price}} JD</a>
-											</div>
-											<div class="woocommerce-product-rating">
-												<a href="#reviews" class="woocommerce-review-link" rel="nofollow"><b> Shop: {{$shop->shop_name}}</b></a>
+											<p> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><b>Shop: {{$shop->shop_name}}</b></span></ins></p>
+
 											</div>
 											<div class="product_meta" style="margin-top: 1%;">
 												<span class="sku_wrapper">color: <span class="sku">{{$flower->flower_color}}</span></span>

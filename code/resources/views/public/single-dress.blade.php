@@ -620,8 +620,8 @@ packages.">
 
                                     <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
 										<figure class="woocommerce-product-gallery__wrapper">
-											<div data-thumb="https://solene.qodeinteractive.com/wp-content/uploads/2019/11/product-1-1-300x225.jpg" data-thumb-alt="m" class="woocommerce-product-gallery__image"><a href="https://solene.qodeinteractive.com/wp-content/uploads/2019/11/product-1-1.jpg"><img style="width:700px;height:600px" src='{{asset("images/$dress->dress_image")}}' class="wp-post-image" alt="m" title="product-1" data-caption="" data-src='{{asset("images/$dress->dress_image")}}' data-large_image='{{asset("images/$dress->dress_image")}}' data-large_image_width="1000" data-large_image_height="735" product-1-1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></a></div>
-											<span class="eltdf-onsale">Sale</span>
+											<div data-thumb="" data-thumb-alt="m" class="woocommerce-product-gallery__image"><img style="width:700px;height:600px" src='{{asset("images/$dress->dress_image")}}' class="wp-post-image" alt="m" title="product-1" data-caption="" data-src='{{asset("images/$dress->dress_image")}}' data-large_image='{{asset("images/$dress->dress_image")}}' data-large_image_width="1000" data-large_image_height="735" product-1-1.jpg 1000w" sizes="(max-width: 600px) 100vw, 600px" /></a></div>
+											
 										</figure>
 									</div>
 
@@ -629,13 +629,15 @@ packages.">
                                     <div class="eltdf-single-product-summary">
                                         <div class="summary entry-summary">
                                             <h2 itemprop="name" class="eltdf-single-product-title">{{$dress->dress_name}}</h2>
-                                            <p class="price"><del><span class="woocommerce-Price-amount amount">
+                                            <p ><del><span class="woocommerce-Price-amount amount">
                                                         <span class="woocommerce-Price-currencySymbol"></span>price:{{$dress->dress_price}} JD</span></del> <ins></p>
                                             <p> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><b>special_price: {{$dress->special_price}}JD</b></span></ins></p>
+
+
                                             <div class="woocommerce-product-rating">
-                                                <a href="#reviews" class="woocommerce-review-link" rel="nofollow"><b>Shop: {{$shop->shop_name}}</b></a>
+                                            <p> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span><b>Shop: {{$shop->shop_name}}</b></span></ins></p>
                                             </div>
-                                            <div class="product_meta">
+                                            <div class="product_meta" style="margin-top: 0px;">
                                                 <span class="sku_wrapper">color: <span class="sku">{{$dress->dress_color}}</span></span>
                                                 <span class="posted_in">size: {{$dress->dress_size}}</a></span>
                                                 <span class="tagged_as">is available: <a href="https://solene.qodeinteractive.com/product-tag/bride/" rel="tag">{{$dress->is_available}}</a><a href="https://solene.qodeinteractive.com/product-tag/white/" rel="tag"></a></span>
@@ -777,14 +779,13 @@ packages.">
                                                     <img style="width: 400px;height:300px" src='{{asset("images/$value->dress_image")}}' class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="i" />
                                                     <div class="eltdf-pl-text" style="width:500px;height:355px">
                                                         <div class="eltdf-pl-text-outer">
-                                                            <div class="eltdf-pl-text-inner"><a href="?add-to-cart=2203" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2203" data-product_sku="21" aria-label="Add &ldquo;Book VI&rdquo; to your cart" rel="nofollow">Add to cart</a></div>
+  
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="eltdf-pl-text-wrapper">
-                                                <h5 class="eltdf-product-list-title"><a href="https://solene.qodeinteractive.com/product/book-vi/"> {{$value->dress_name}}</a></h5>
-                                                <span class="price">
+                                            <h5 class="eltdf-product-list-title"><a href="/dresses2/{{$value->id}}"> {{$value->dress_name}}</a></h5>                                                <span class="price">
                                                     <span class="woocommerce-Price-amount amount">
                                                         <!-- <span class="woocommerce-Price-currencySymbol">&euro;</span>50.00</span></span> -->
                                             </div>

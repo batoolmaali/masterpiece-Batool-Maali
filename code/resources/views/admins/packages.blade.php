@@ -132,10 +132,10 @@
                 <div class="search-bar">
                     <form class="main-search" action="">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Live Search ...">
+                        <input type="text" class="form-control" placeholder="Live ">
                             <span class="input-group-btn">
                                 <button class="btn btn-primary btn-sm text-muted" type="button">
-                                    <i class="fa fa-search"></i>
+                                   
                                 </button>
                             </span>
                         </div>
@@ -360,8 +360,15 @@
                                                 <td><b>id</b></td>
                                                 <td><b>package name</b></td>
                                                 <td><b>package price</b></td>
-                                                <td><b>package date</b></td>
-                                                <td><b>Delete</b></td>
+                                                <td><b></b></td>
+                                                <td><b></b></td>
+                                                <td><b></b></td>
+                                                <td><b></b></td>
+                                                <td><b></b></td>
+                                                <td><b></b></td>
+                                                
+                                                <td><b></b></td>
+                                                <td><b></b></td>
 
                                             </tr>
 
@@ -370,9 +377,28 @@
                                             @foreach($x as $value)
                                             <tr>
                                                 <td>{{$value->id}}</td>
-
                                                 <td>{{$value->name}}</td>
                                                 <td>{{$value->price}}</td>
+                                                <td>
+                                                @if($value->dress)  
+                                                <td> <a href="/dresses2/{{$value->id}}">{{optional($value->dress)->dress_name}}</a></td>
+                                                 @endif 
+                                                 @if($value->suit)  
+                                                <td> <a href="/suit2/{{$value->id}}">{{optional($value->suit)->suit_name}}</a></td>
+                                                 @endif 
+                                                 @if($value->flower)
+                                                <td> <a href="/flower2/{{$value->id}}">{{optional($value->flower)->flower_name}}</a></td>
+                                                @endif 
+                                                @if($value->hall)  
+                                                <td><a href="/hall2/{{$value->id}}"> {{optional($value->hall)->hall_name}}</a></td>
+                                                @endif 
+                                                @if($value->photographer)  
+                                                <td><a href="/photographers2/{{$value->id}}">{{optional($value->photographer)->photographer_name}}</a></td>
+                                                @endif 
+                                                @if($value->touristDestination) 
+                                                <td> <a href="/Tourist_destinations2/{{$value->id}}">{{optional($value->touristDestination)->city_name}}</a></td>
+                                                 @endif 
+                                              
                                                 <td>{{$value->created_at}}</td>
 
 
